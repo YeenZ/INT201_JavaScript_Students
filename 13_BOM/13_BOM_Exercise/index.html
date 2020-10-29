@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Browser Object Modeling</h2>
+      <h4>::Menu:: Browser Objects</h4>
+    </header>
+    <div class="menu">
+      <button class="menulinks" onclick="openMenu('Window')">Window</button>
+      <button class="menulinks" onclick="openMenu('Location')">Location</button>
+      <button class="menulinks" onclick="openMenu('Navigation')">Navigation</button>
+      <button class="menulinks" onclick="openMenu('History')">History</button>
+    </div>
+
+    <iframe
+      src="./pages/window.html"
+      name="iframe_content"></iframe>
+    <footer>
+      <button id="previous" onclick="backTo()">&lt;&lt;Prev</button>
+      <button id="next" onclick="nextTo()">Next>></button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
