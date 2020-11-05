@@ -1,0 +1,80 @@
+   * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    .main {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "photo photo profile profile"
+        "thumbnail1 thumbnail2 thumbnail3 thumbnail4"
+      ;
+      margin: 2rem 0;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+    #img-container {
+      position: relative;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .photo {
+      grid-area: photo;
+    }
+    .profile {
+      grid-area: profile;
+    }
+    
+    .thumbnail1 {
+      grid-area: thumbnail1;
+    }
+    .thumbnail2 {
+      grid-area: thumbnail2;
+    }
+    .thumbnail3 {
+      grid-area: thumbnail3;
+    }
+    .thumbnail4 {
+      grid-area: thumbnail4;
+    }
+
+   
+    .moveButton {
+      float: right;
+    }
+    .next-btn,
+    .prev-btn {
+      font-size: 20px;
+      color: deepskyblue;
+      font-weight: bolder;
+      cursor: pointer;
+      border: 0;
+    }
+    .surprised-btn {
+      border: 2px solid lightblue;
+      padding: 6px;
+      border-radius: 12px;
+      background-color: deepskyblue;
+      color: white;
+
+    }
+    .surprised-btn:hover {
+      background-color:lightskyblue;
+      color: black;
+      cursor: pointer;
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+   

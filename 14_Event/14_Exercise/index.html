@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main">
+    <h2>Web Programming Team Teaching</h2>
+    <hr>
+    <button class="surprised-btn">Surprised Me</button>
+
+    <input type="text" id="lect-value" placeholder="Type name..." onkeypress="return onlyAlpha(event)">
+    <button type="button" id="lect-search">Search</button>
+
+    <div class="moveButton">
+      <button class="prev-btn">
+        << </button>
+          <button class="next-btn">>></button>
+    </div>
+    <h3 id="lect">Asst.Prof.Kriengkrai Porkaew</h3>
+    <section class="container">
+      <div class="photo">
+        <img id="img-container" src="./imgs/AjKK.jpg" style="width:100%">
+      </div>
+      <div class="profile">
+        <h3>Academic Background</h3>
+        <ul id="academic">
+          <li>M.Sc. & Ph.D. (Computer Science) the Department of Computer Science, the University of Illinois at
+            Urbana-Champaign, USA.</li>
+          <li>B.Sc. (Computer Science) the Department of Computer Science, Ramkhamhaeng University, Thailand.</li>
+          <li>B.Sc. (Medical Science) the Faculty of Medicine - Siriraj Hospital, Mahidol University, Thailand.</li>
+        </ul>
+        <h3>Teaching Experience</h3>
+        <ul id="teaching">
+          <li>Bioinformatics: Biological Sequence Analysis</li>
+          <li>DB: DBMS, DB Technology, DB Design, Multimedia IR</li>
+          <li>PL: Java, Perl, Programming Language Concepts</li>
+          <li>SE: Design Patterns, Web Application Development</li>
+        </ul>
+      </div>
+
+      <div id="pichet" class="thumbnail1">
+        <img src="./imgs/AjPichet.jpg" style="width:80%">
+        <p>Lect. Pichet Limvajiranan</p>
+      </div>
+
+      <div id="sanit" class="thumbnail2">
+        <img src="./imgs/AjSanit.jpg" style="width:80%">
+        <p>Lect. Sanit Sirisawatvatana</p>
+      </div>
+
+      <div id="umaporn" class="thumbnail3">
+        <img src="./imgs/AjJing.jpg" style="width:80%">
+        <p>Asst.Prof. Umaporn Supasitthimethee</p>
+      </div>
+      <div id="tisanai" class="thumbnail4">
+        <img src="./imgs/Tisanai.jpg" alt="LF:Tisanai" style="width:80%">
+        <p>Mr. Tisanai Chatuporn</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
