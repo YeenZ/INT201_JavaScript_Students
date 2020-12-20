@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Lab Exam</h2>
+      <h4>::Menu::</h4>
+    </header>
+    <div class="menu">
+       <button class="menulinks" onclick="openMenu('home')">HOME</button>
+      <button class="menulinks" onclick="openMenu('content1')">Content#1</button>
+      <button class="menulinks" onclick="openMenu('content2')">Content#2</button>
+      <button class="menulinks" onclick="openMenu('content3')">Content#3</button>
+     
+    </div>
+
+    <iframe
+      src="./pages/home.html"
+      name="iframe_content"></iframe>
+    <footer>
+      <button id="home" onclick="home()">HOME</button>
+     <button id="previous" onclick="backTo()">&lt;&lt;Prev</button>
+      <button id="next" onclick="nextTo()">Next>></button>
+    
+   
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
